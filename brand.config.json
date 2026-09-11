@@ -80,6 +80,9 @@
     },
     "platform": {
         "name": "cashmaker_autobot",
+        "i18n": {
+            "default_language": "EN"
+        },
         "footer": {
             "enable_language_settings": false,
             "enable_theme_toggle": true

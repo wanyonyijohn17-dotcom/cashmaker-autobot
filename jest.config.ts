@@ -105,6 +105,10 @@ const config: Config = {
         '^@/stores/(.*)$': '<rootDir>/src/stores/$1',
         '^@/pages/(.*)$': '<rootDir>/src/pages/$1',
         '^@/services/(.*)$': '<rootDir>/src/services/$1',
+        // `@/` is mapped one directory at a time here, with no catch-all.
+        '^@/translations$': '<rootDir>/src/translations',
+        // The footer and mobile menu escape the alias to reach brand.config.json.
+        '^@/\\.\\./brand\\.config\\.json$': '<rootDir>/brand.config.json',
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
